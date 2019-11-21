@@ -1,0 +1,19 @@
+#服务配置
+server:
+  port: 20000
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: activemq-consumer
+
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+
+
+
+
+queue: queue
