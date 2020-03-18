@@ -1,0 +1,19 @@
+#服务配置
+server:
+  port: 20004
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: mongodb-service
+  data:
+    mongodb:
+      username: admin
+
+
+
+
+
+
+

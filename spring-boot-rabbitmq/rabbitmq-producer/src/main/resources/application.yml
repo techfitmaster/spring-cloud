@@ -1,0 +1,22 @@
+#服务配置
+server:
+  port: 20004
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: rabbitmq-producer
+
+  rabbitmq:
+    template:
+      retry:
+        enabled: true
+        initial-interval: 2s
+
+
+
+
+
+
+

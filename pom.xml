@@ -10,22 +10,50 @@
     <version>1.0</version>
     <modules>
         <module>spring-boot-activemq</module>
+        <module>spring-boot-oauth2</module>
+        <module>spring-boot-kafka</module>
+        <module>spring-boot-rabbitmq</module>
+        <module>spring-boot-mongodb</module>
+        <module>spring-boot-netty</module>
+        <module>spring-boot-docker</module>
     </modules>
     <properties>
         <spring-cloud.version>Finchley.SR2</spring-cloud.version>
         <mapper-starter.version>2.0.2</mapper-starter.version>
         <lombok.version>1.18.10</lombok.version>
     </properties>
-
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.4.RELEASE</version>
     </parent>
-
-
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

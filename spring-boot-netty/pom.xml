@@ -9,17 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-activemq</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>activemq-consumer</module>
-        <module>activemq-producer</module>
-    </modules>
-
-    <dependencies>
+    <artifactId>spring-boot-netty</artifactId>
+    <dependencies><!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
         </dependency>
     </dependencies>
 

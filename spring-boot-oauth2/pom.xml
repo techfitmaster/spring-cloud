@@ -8,19 +8,10 @@
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>spring-boot-activemq</artifactId>
+    <artifactId>spring-boot-oauth2</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>activemq-consumer</module>
-        <module>activemq-producer</module>
+        <module>spring-boot-oauth2-server</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>

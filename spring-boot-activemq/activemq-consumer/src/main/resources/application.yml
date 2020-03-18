@@ -13,7 +13,10 @@ spring:
     user: admin
     password: admin
 
-
-
+#  activemq:
+#    broker-url: tcp://dc.foyoedu.com:61616
+#    user: app.test
+#    password: 51bcde83c63b41e4bc20001c05d72653
 
 queue: queue
+#queue: Consumer.YUHUAN

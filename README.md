@@ -6,7 +6,7 @@ SpringCloud有很多springboot组件构成
 
 - spring-cloud
     - spring-boot-activemq
-        - activemq-consumer
-        - activemq-producer
-
-    
+        - [activemq-consumer(消费者)]()
+        - [activemq-producer(生产者)]()
+    - spring-boot-oauth2
+        - spring-boot-oauth2-server(授权中心)

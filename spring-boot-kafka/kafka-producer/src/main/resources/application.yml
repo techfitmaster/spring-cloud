@@ -1,0 +1,18 @@
+#服务配置
+server:
+  port: 20002
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: kafka-producer
+
+  kafka:
+    consumer:
+      group-id: foo
+      auto-offset-reset: earliest
+
+
+
+
