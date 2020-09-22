@@ -35,7 +35,7 @@ public class ProducerService {
     public void sendMessage() {
         log.info("发送消息-----------------");
 
-        ListenableFuture<SendResult<Integer, String>> future = this.template.send("myTopic","something" + (i++));
+        ListenableFuture<SendResult<Integer, String>> future = this.template.send("myTopic7","something" + (i++));
         future.addCallback(new ListenableFutureCallback<SendResult<Integer, String>>() {
 
             @Override

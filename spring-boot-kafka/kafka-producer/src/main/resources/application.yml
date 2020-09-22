@@ -9,10 +9,12 @@ spring:
     name: kafka-producer
 
   kafka:
+    bootstrap-servers: 52.80.81.232:9092
     consumer:
-      group-id: foo
+      group-id: ms
       auto-offset-reset: earliest
-
+    listener:
+      missing-topics-fatal: false
 
 
 

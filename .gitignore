@@ -1,0 +1,19 @@
+/target/*
+/uploads/
+/*/target/
+/*/*/target/
+/logs/
+/outputs/
+*.R
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+### Eclipse ###
+.project
+.classpath
+.DS_Store
+.settings

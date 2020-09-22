@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: activemq-consumer
+Implementation-Version: 1.0
+Built-By: albert
+Implementation-Vendor-Id: com.huzhengxing
+Build-Jdk: 1.8.0_212
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-cloud/spring-boot-activemq/activemq-consumer
+Created-By: Maven Integration for Eclipse
+

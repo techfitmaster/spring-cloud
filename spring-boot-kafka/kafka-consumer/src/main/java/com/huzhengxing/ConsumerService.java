@@ -15,9 +15,44 @@ import org.springframework.stereotype.Component;
 public class ConsumerService {
 
 
-    @KafkaListener(id = "foo", topics = "myTopic")
+    @KafkaListener(topics = "DataNode")
     public void listen(String data) {
-      log.info("接收消息:{}",data);
+        log.info("接收消息 myTopic :{}", data);
+    }
+
+    @KafkaListener(topics = "MedusaDataSync")
+    public void listen1(String data) {
+        log.info("接收消息 myTopic1:{}", data);
+    }
+
+    @KafkaListener(topics = "User")
+    public void listen2(String data) {
+        log.info("接收消息 myTopic2:{}", data);
+    }
+
+    @KafkaListener(topics = "myTopic3")
+    public void listen3(String data) {
+        log.info("接收消息 myTopic :{}", data);
+    }
+
+    @KafkaListener(topics = "myTopic4")
+    public void listen4(String data) {
+        log.info("接收消息 myTopic1:{}", data);
+    }
+
+    @KafkaListener(topics = "myTopic5")
+    public void listen5(String data) {
+        log.info("接收消息 myTopic2:{}", data);
+    }
+
+    @KafkaListener(topics = "myTopic6")
+    public void listen6(String data) {
+        log.info("接收消息 myTopic1:{}", data);
+    }
+
+    @KafkaListener(topics = "myTopic7")
+    public void listen7(String data) {
+        log.info("接收消息 myTopic7:{}", data);
     }
 
 
