@@ -20,6 +20,7 @@
         <module>spring-boot-elk</module>
         <module>spring-boot-jpa-psql</module>
         <module>spring-boot-proguard</module>
+        <module>spring-boot-spark</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -32,4 +33,5 @@
         <mapper-starter.version>2.0.2</mapper-starter.version>
         <fast-json.version>1.2.62</fast-json.version>
     </properties>
+
 </project>
