@@ -1,7 +1,6 @@
 package com.huzhengxing;
 
 import org.apache.hadoop.metrics2.util.SampleStat;
-import org.apache.spark.ml.feature.OneHotEncoder;
 import org.apache.spark.ml.linalg.VectorUDT;
 import org.apache.spark.ml.linalg.Vectors;
 import org.apache.spark.ml.stat.Correlation;
@@ -15,7 +14,6 @@ import org.apache.spark.sql.types.StructType;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Vector;
 
 /**
  * @author 2020/9/23 09:45  zhengxing.hu

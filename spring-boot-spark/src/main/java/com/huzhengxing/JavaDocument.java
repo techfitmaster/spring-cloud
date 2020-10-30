@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 @SuppressWarnings("serial")
 public class JavaDocument implements Serializable {
-
+    
     private long id;
     private String text;
 

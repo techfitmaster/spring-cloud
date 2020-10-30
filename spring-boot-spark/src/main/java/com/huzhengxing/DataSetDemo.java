@@ -28,7 +28,6 @@ public class DataSetDemo {
         df.printSchema();
         df.describe().show();
         df.foreach((ForeachFunction<Row>) System.out::println);
-
-
+        df.show();
     }
 }

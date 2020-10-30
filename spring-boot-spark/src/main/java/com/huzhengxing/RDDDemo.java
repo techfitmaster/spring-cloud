@@ -5,6 +5,8 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.SparkSession;
 
+import java.util.Arrays;
+
 /**
  * @author 2020/10/21 14:06  zhengxing.hu
  * @version 1.0.0
@@ -21,7 +23,13 @@ public class RDDDemo {
 
 
     public static void main(String[] args) {
-        JavaRDD<String> stringJavaRDD = sc.textFile("file'");
+        JavaRDD<String> stringJavaRDD = sc.textFile("spring-boot-spark/breast_hetero_guest.csv");
+//        JavaRDD<String> filter = stringJavaRDD.filter((s,t) -> {s.split(" "));
+
+        JavaRDD<String> parallelize = sc.parallelize(Arrays.asList("1", "2"));
+//        parallelize.saveAsTextFile("output");
+
+
     }
 
 

@@ -10,10 +10,11 @@
 *.iws
 *.iml
 *.ipr
-
-
+/*/.factorypath
+/*/*/.factorypath
 ### Eclipse ###
 .project
 .classpath
 .DS_Store
 .settings
+.vscode
