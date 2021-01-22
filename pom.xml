@@ -24,6 +24,7 @@
         <module>spring-boot-hadoop</module>
         <module>spring-boot-activiti</module>
         <module>spring-boot-scala</module>
+        <module>spring-boot-cache</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
