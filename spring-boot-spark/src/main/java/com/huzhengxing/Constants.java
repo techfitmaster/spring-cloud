@@ -14,4 +14,8 @@ public class Constants {
 
     public static final String TEST_CSV = "/Users/Albert/Desktop/dataset/test_csv.csv";
 
+    public static final String DATA_10K = "/Users/Albert/WeDrive/锘崴科技/test_data/GWAS/data_10k.txt";
+
+    public static final String DATA_200K =  "/Users/Albert/Dataset/anonymous0_200000.csv";
+
 }

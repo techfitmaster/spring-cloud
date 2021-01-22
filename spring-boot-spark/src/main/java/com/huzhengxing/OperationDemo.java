@@ -1,18 +1,14 @@
 package com.huzhengxing;
 
-import java.util.*;
-
-import org.apache.spark.SparkConf;
-import org.apache.spark.SparkContext;
 import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.FlatMapFunction;
 import org.apache.spark.api.java.function.MapFunction;
 import org.apache.spark.api.java.function.MapPartitionsFunction;
 import org.apache.spark.rdd.RDD;
 import org.apache.spark.sql.*;
-import scala.Int;
-import scala.collection.generic.SeqFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 各种算子测试
@@ -25,15 +21,17 @@ import scala.collection.generic.SeqFactory;
 public class OperationDemo {
 
     private static final SparkSession spark = SparkSession.builder()
-            // .appName("Simple Application")
+             .appName("Simple Application")
             .master("local[*]").getOrCreate();
-    private Dataset<Row> dataset = spark.read().option("header", true).csv(Constants.SAMPLE);
+//    private Dataset<Row> dataset = spark.read().option("header", true).csv(Constants.SAMPLE);
+    private final Dataset<Row> dataset = spark.read().option("header", true).csv("hdfs://192.168.10.19:9000/data_200k.csv");
 
-    private static final SparkConf conf = new SparkConf().setAppName("appName").setMaster("local[*]");
-    private static final SparkContext sc = new SparkContext(conf);
+//    private static final SparkConf conf = new SparkConf().setAppName("appName").setMaster("local[*]");
+//    private static final SparkContext sc = new SparkContext(conf);
 
 
     public void testMap() {
+
         dataset.show(false);
         Encoder<String> rowEncoder = Encoders.STRING();
         Dataset<String> strDataset = dataset.map((MapFunction<Row, String>) r -> {
@@ -71,6 +69,7 @@ public class OperationDemo {
 
    
     public void testMapFlatMap() {
+        dataset.show();
         Encoder<String> rowEncoder = Encoders.STRING();
         Dataset<String> strDataset = dataset.flatMap((FlatMapFunction<Row, String>) r-> {
             List<String> list = new ArrayList<>();
@@ -108,12 +107,8 @@ public class OperationDemo {
      * 将分区的数据库
      */
     public void testGlom() {
-
         RDD<Row> rdd = dataset.rdd();
-
-        RDD<Object> glom = rdd.glom();
-
-
+//        RDD<Object> glom = rdd.glom();
     }
 
 
@@ -121,10 +116,14 @@ public class OperationDemo {
         OperationDemo operationDemo = new OperationDemo();
 //        operationDemo.testMap();
 //        operationDemo.testMapPartition();
-//        operationDemo.testMapFlat();
+//        operationDemo.testMapFlatMap();
 //        operationDemo.testSample();
 //        operationDemo.testUnion();
-        operationDemo.testIntersection();
+//        operationDemo.testIntersection();
+
+
+
+
     }
 
 }

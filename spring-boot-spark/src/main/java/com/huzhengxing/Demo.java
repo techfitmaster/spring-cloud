@@ -1,11 +1,12 @@
 package com.huzhengxing;
 
-import org.apache.spark.ml.feature.MinMaxScaler;
-import org.apache.spark.ml.feature.MinMaxScalerModel;
-import org.apache.spark.ml.feature.VectorAssembler;
 import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.ml.functions;
-import org.apache.spark.ml.linalg.*;
+import org.apache.spark.ml.feature.
+        MinMaxScaler;
+import org.apache.spark.ml.feature.MinMaxScalerModel;
+import org.apache.spark.ml.linalg.Vector;
+import org.apache.spark.ml.linalg.VectorUDT;
+import org.apache.spark.ml.linalg.Vectors;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.RowFactory;
@@ -18,12 +19,7 @@ import org.apache.spark.sql.types.StructType;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
-
-import static org.apache.spark.sql.functions.col;
-import static org.apache.spark.sql.functions.soundex;
 
 /**
  * @author 2020/10/21 10:40 zhengxing.hu
@@ -50,7 +46,7 @@ public class Demo {
      * 3. 预处理数据
      */
     private static void preprocessingData() {
-        String filepath = "breast_hetero_guest.csv";
+        String filepath = "spring-boot-spark/breast_hetero_guest.csv";
         new Thread(() -> {
             while (true) {
             }
@@ -105,7 +101,6 @@ public class Demo {
             }
             data.add(RowFactory.create(row.get(0), Vectors.dense(tmp)));
         }
-
         // Dataset<Row> filter = dataset.foreach();
         // filter.show();
 
