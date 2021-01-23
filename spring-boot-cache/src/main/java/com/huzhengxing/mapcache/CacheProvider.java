@@ -1,8 +1,7 @@
-package com.huzhengxing.mapchache;
+package com.huzhengxing.mapcache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 

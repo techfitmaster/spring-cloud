@@ -1,4 +1,4 @@
-package com.huzhengxing.mapchache;
+package com.huzhengxing.mapcache;
 
 
 import org.junit.Test;
