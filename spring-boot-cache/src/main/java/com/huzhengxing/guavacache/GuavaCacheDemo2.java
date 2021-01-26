@@ -29,7 +29,6 @@ public class GuavaCacheDemo2 {
                 // 如果存在会返回Value，不存在会调用Call方法
                 @Override
                 public String call() throws Exception {
-                    // TODO Auto-generated methdod stub
                     System.out.println("key 不存在");
                     return null;
                 }
