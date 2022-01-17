@@ -22,7 +22,7 @@
         <module>spring-boot-proguard</module>
         <module>spring-boot-spark</module>
         <module>spring-boot-hadoop</module>
-        <module>spring-boot-activiti</module>
+        <module>spring-boot-activemq</module>
         <module>spring-boot-scala</module>
         <module>spring-boot-cache</module>
         <module>spring-boot-jni</module>
