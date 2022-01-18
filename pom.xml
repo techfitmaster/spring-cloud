@@ -26,6 +26,9 @@
         <module>spring-boot-scala</module>
         <module>spring-boot-cache</module>
         <module>spring-boot-jni</module>
+        <module>spring-boot-grpc</module>
+        <module>spring-boot-apusic</module>
+
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

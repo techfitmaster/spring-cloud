@@ -19,3 +19,7 @@
 .settings
 .vscode
 .history
+/*/.mvn
+mvnw
+mvnw.cmd
+.mvn

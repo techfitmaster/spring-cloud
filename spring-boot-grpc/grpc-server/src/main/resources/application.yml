@@ -1,0 +1,8 @@
+
+server:
+  port: 10001
+spring:
+  application:
+    name: grpc-server
+grpc:
+  server-port: 20001
