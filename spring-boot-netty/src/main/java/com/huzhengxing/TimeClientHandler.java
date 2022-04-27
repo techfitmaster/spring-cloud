@@ -14,7 +14,7 @@ public class TimeClientHandler extends ChannelInboundHandlerAdapter {
         ByteBuf m = (ByteBuf) msg; // (1)
         try {
             long currentTimeMillis = (m.readUnsignedInt() - 2208988800L) * 1000L;
-            System.out.println(new Date(currentTimeMillis));
+            System.out.println("time is " + new Date(currentTimeMillis));
             ctx.close();
         } finally {
             m.release();

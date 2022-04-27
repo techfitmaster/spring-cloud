@@ -2,15 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+<!--    <parent>-->
+<!--        <artifactId>spring-boot-grpc</artifactId>-->
+<!--        <groupId>com.huzhengxing</groupId>-->
+<!--        <version>1.0.0</version>-->
+<!--    </parent>-->
     <parent>
-        <artifactId>spring-boot-grpc</artifactId>
-        <groupId>com.huzhengxing</groupId>
-        <version>1.0.0</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.4.RELEASE</version>
+        <relativePath/>
     </parent>
     <artifactId>grpc-client</artifactId>
     <version>1.0.0</version>
     <name>grpc-client</name>
     <description>grpc-client</description>
+    <packaging>jar</packaging>
     <properties>
         <java.version>11</java.version>
     </properties>

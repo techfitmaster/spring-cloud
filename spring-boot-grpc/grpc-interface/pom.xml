@@ -8,9 +8,6 @@
         <version>1.0.0</version>
     </parent>
     <artifactId>grpc-interface</artifactId>
-    <version>1.0.0</version>
-    <name>grpc-interface</name>
-    <description>grpc-interface</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -39,7 +36,9 @@
                     <protocArtifact>com.google.protobuf:protoc:3.11.3:exe:${os.detected.classifier}</protocArtifact>
                     <pluginId>grpc-java</pluginId>
                     <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.28.1:exe:${os.detected.classifier}</pluginArtifact>
-                    <!--                    <protocExecutable>/Users/jiangwen/tools/protoc-3.11.3/bin/protoc</protocExecutable>-->
+                    <protoSourceRoot>src/main/proto</protoSourceRoot>
+                    <outputDirectory>src/main/java</outputDirectory>
+                    <clearOutputDirectory>false</clearOutputDirectory>
                 </configuration>
                 <executions>
                     <execution>

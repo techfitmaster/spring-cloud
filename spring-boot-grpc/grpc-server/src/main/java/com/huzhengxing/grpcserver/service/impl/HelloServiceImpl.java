@@ -25,7 +25,7 @@ public class HelloServiceImpl extends HelloWorldGrpc.HelloWorldImplBase {
         log.info("Input name is {}", request.getName());
         String message;
         request.getName();
-        message = request.getName();
+        message = "Grpc server say : hi " +  request.getName();
 
         HelloWorldService.HelloResponse response = HelloWorldService.HelloResponse.newBuilder().setMessage(message).build();
         responseObserver.onNext(response);

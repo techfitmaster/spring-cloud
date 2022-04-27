@@ -7,10 +7,8 @@
         <groupId>com.huzhengxing</groupId>
         <version>1.0.0</version>
     </parent>
+
     <artifactId>grpc-server</artifactId>
-    <version>1.0.0</version>
-    <name>grpc-server</name>
-    <description>grpc-server</description>
     <properties>
         <java.version>11</java.version>
     </properties>
