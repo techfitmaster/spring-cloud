@@ -28,6 +28,8 @@
         <module>spring-boot-jni</module>
         <module>spring-boot-grpc</module>
         <module>spring-boot-apusic</module>
+        <module>spring-boot-i18n</module>
+        <module>spring-boot-istio</module>
 
     </modules>
     <parent>
